@@ -1,0 +1,92 @@
+a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px; 
+    font-weight: 400; 
+    font-style: normal; 
+    color: #a9a6b3;
+}
+.speedbar ul li{ 
+  float:left;  
+  position:relative;
+}
+.speedbar ul li a{
+  color:#a9a6b3;
+  line-height:20px;
+  
+}
+.speedbar ul li:hover > a{
+  color:#e0b115;  
+}
+
+.navbar {
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+
+.dropdown-a{
+    background-color: transparent;
+    border: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.dropdown-content a{
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #1d1c2bee;
+    min-width: 300px;
+    padding: 15px 20px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+hr{
+    border: none;
+    background-color: #a9a6b3;
+    color: #a9a6b3;
+    height: 10px;
+}
+
+/* Стиль кнопка, которая используется для открытия и закрытия складного содержимого */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Добавить цвет фона для кнопки, если она нажата (добавить класс .active с JS), а при наведении на него курсора мыши (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Стиль складного содержимого. Примечание: скрыто по умолчанию */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Символ юникода для знака "плюс" (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2796'; /* Символ юникода для знака "минус" (-) */
+}
